@@ -1,0 +1,40 @@
+body {
+    background: url(background.jpg);
+}
+.keys {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    text-align-last: center;
+    margin: 0 50px;
+}
+.keys .key {
+    display: flex;
+    flex-flow: column;
+    border: 2px solid orange;
+    background-color: white;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    margin: 5px;
+    transition: all .19s;
+    padding-bottom: 10px;
+}
+.playing {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 14px orange inset;
+    color: orange;
+}
+.key:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 14px orange inset;
+    color: orange;
+}
+.keys .key kbd {
+    font-size: 5rem;
+}
+.keys .key .sound {
+    opacity: 0.7;
+    text-transform: capitalize;
+}
