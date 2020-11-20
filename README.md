@@ -8,3 +8,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/01.png)
 * 02 - JS and CSS Clock<br>
 ![''](./screenshots/02.png)
+* 03 - CSS Variables<br>
+![''](./screenshots/03.png)

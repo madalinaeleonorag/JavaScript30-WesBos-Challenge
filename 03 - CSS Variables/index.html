@@ -1,0 +1,119 @@
+<html>
+  <head> </head>
+  <body>
+    <h1>
+      Change <span class="programming-language">CSS</span> attributes by
+      <span class="programming-language">JS</span>
+    </h1>
+    <div class="controls">
+      Spacing:
+      <input
+        type="range"
+        name="spacing"
+        min="0"
+        max="200"
+        value="7"
+        data-sizing="px"
+      />
+      Blur:
+      <input
+        type="range"
+        name="blur"
+        min="0"
+        max="10"
+        value="1"
+        data-sizing="px"
+      />
+      Color:
+      <input type="color" name="base" value="#233010" />
+    </div>
+    <img src="cartoon.png" class="image" />
+
+    <script>
+      const inputs = document.querySelectorAll(".controls input");
+
+      function handleUpdate() {
+        const suffix = this.dataset.sizing || "";
+        document.documentElement.style.setProperty(
+          `--${this.name}`,
+          this.value + suffix
+        );
+      }
+
+      inputs.forEach((input) => input.addEventListener("change", handleUpdate));
+      inputs.forEach((input) =>
+        input.addEventListener("mousemove", handleUpdate)
+      );
+    </script>
+
+    <style>
+      :root {
+        --base: #233010;
+        --spacing: 7px;
+        --blur: 0px;
+      }
+      body {
+        text-align: center;
+        padding-top: 50px;
+        color: black;
+        background-image: url(background.jpg);
+        object-fit: cover;
+        background-position-y: center;
+      }
+      .image {
+        padding: var(--spacing);
+        background-color: var(--base);
+        width: auto;
+        height: 50%;
+        box-shadow: 0px 0px 14px var(--base);
+        margin-top: 15px;
+        filter: blur(var(--blur));
+      }
+      .programming-language {
+        color: var(--base);
+      }
+      h1 {
+        font-weight: bold;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        input[type="range"] {
+          overflow: hidden;
+          width: 80px;
+          -webkit-appearance: none;
+          background-color: white;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+          height: 10px;
+          -webkit-appearance: none;
+          color: white;
+          margin-top: -1px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+          width: 10px;
+          -webkit-appearance: none;
+          height: 10px;
+          cursor: ew-resize;
+          background: #434343;
+          box-shadow: -80px 0 0 80px var(--base);
+        }
+      }
+      /** FF*/
+      input[type="range"]::-moz-range-progress {
+        background-color: var(--base);
+      }
+      input[type="range"]::-moz-range-track {
+        background-color: white;
+      }
+      /* IE*/
+      input[type="range"]::-ms-fill-lower {
+        background-color: var(--base);
+      }
+      input[type="range"]::-ms-fill-upper {
+        background-color: white;
+      }
+    </style>
+  </body>
+</html>
