@@ -10,3 +10,7 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/02.png)
 * 03 - CSS Variables<br>
 ![''](./screenshots/03.png)
+* 04 - Array Cardio Day 1<br>
+![''](./screenshots/04-1.png)
+![''](./screenshots/04-2.png)
+![''](./screenshots/04-3.png)
