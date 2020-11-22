@@ -14,3 +14,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/04-1.png)
 ![''](./screenshots/04-2.png)
 ![''](./screenshots/04-3.png)
+* 05 - Flex Panel Gallery<br>
+![''](./screenshots/05.png)
