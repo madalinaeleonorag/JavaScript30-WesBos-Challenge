@@ -2,43 +2,64 @@
 <html lang="en">
   <head> </head>
   <body>
-    <canvas id="draw" width="800" height="800"></canvas>
+    <div class="controls">
+      lineWidth:
+      <input
+        type="range"
+        name="lineWidth"
+        min="1"
+        max="20"
+        value="1"
+        data-sizing="px"
+      />
+      Color:
+      <input type="color" name="color" value="#233010" />
+    </div>
+
+    <div class="draw-place">
+      <canvas id="draw" width="70vw" height="80vh"></canvas>
+    </div>
+
     <script>
+      let strokeColor = "#000000";
+      let lineWidth = 1;
+
+      const inputs = document.querySelectorAll(".controls input");
+
+      function handleUpdate() {
+        if (this.name === "lineWidth") {
+          lineWidth = this.value;
+        } else if (this.name === "color") {
+          strokeColor = this.value;
+        }
+      }
+
+      inputs.forEach((input) => input.addEventListener("change", handleUpdate));
+      inputs.forEach((input) =>
+        input.addEventListener("mousemove", handleUpdate)
+      );
+
       const canvas = document.querySelector("#draw");
       const ctx = canvas.getContext("2d");
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      ctx.strokeStyle = "black";
+      ctx.strokeStyle = strokeColor;
       ctx.lineJoin = "round";
       ctx.lineCap = "round";
-      ctx.lineWidth = 1;
-        ctx.globalCompositeOperation = 'soft-light'
+      ctx.globalCompositeOperation = "soft-light";
       let isDrawing = false;
       let lastX = 0;
       let lastY = 0;
-      let hue = 0;
-      let direction = true;
 
       function draw(e) {
+        ctx.lineWidth = lineWidth;
         if (!isDrawing) return;
-        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.strokeStyle = strokeColor;
         ctx.beginPath();
         ctx.moveTo(lastX, lastY);
         ctx.lineTo(e.offsetX, e.offsetY);
         ctx.stroke();
         [lastX, lastY] = [e.offsetX, e.offsetY];
-        hue++;
-        if (hue >= 360) {
-          hue = 0;
-        }
-        if (ctx.lineWidth >= 20 || ctx.lineWidth <= 1) {
-          direction = !direction;
-        }
-        if (direction) {
-          ctx.lineWidth++;
-        } else {
-          ctx.lineWidth--;
-        }
       }
 
       canvas.addEventListener("mousedown", (e) => {
@@ -47,13 +68,36 @@
       });
       canvas.addEventListener("mousemove", draw);
       canvas.addEventListener("mouseup", () => (isDrawing = false));
-      canvas.addEventListener("mouseout", () => (isDrawing = true));
+      canvas.addEventListener("mouseout", () => (isDrawing = false));
     </script>
 
     <style>
       html,
       body {
         margin: 0;
+      }
+      body {
+        background: url("./background.jpg");
+        object-fit: cover;
+      }
+      .controls {
+        display: flex;
+        flex-flow: row;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+      .draw-place {
+        background-color: white;
+        width: 70vw;
+        flex-flow: row;
+        display: flex;
+        height: 80vh;
+        margin-left: auto;
+        box-shadow: 0 0 16px 0px grey;
+        margin-right: auto;
       }
     </style>
   </body>
