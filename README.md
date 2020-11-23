@@ -18,3 +18,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/05.png)
 * 06 - Ajax Type Ahead<br>
 ![''](./screenshots/06.png)
+* 07 - Array Cardio Day 2<br>
+![''](./screenshots/07.png)
