@@ -20,3 +20,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/06.png)
 * 07 - Array Cardio Day 2<br>
 ![''](./screenshots/07.png)
+* 08 - Fun with HTML5 Canvas<br>
+![''](./screenshots/08.png)
