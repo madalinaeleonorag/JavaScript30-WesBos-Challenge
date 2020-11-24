@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+      const dogs = [
+        { name: "Snickers", age: 2 },
+        { name: "hugo", age: 8 },
+      ];
+
+      function makeGreen() {
+        const p = document.querySelector("p");
+        p.style.color = "#BADA55";
+        p.style.fontSize = "50px";
+      }
+
+      const p = document.querySelector("p");
+
+      // Regular
+      console.log(
+        "%cRegular",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.log(`Hellow, i'm the regular console`);
+
+      // Interpolated
+      console.log(
+        "%cInterpolated",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.log("Hellow, ", "this is an interpolated console");
+
+      // Styled
+      console.log(
+        "%cStyled",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.log(
+        "%cStyled console",
+        "font-wight: bold; background-color: yellow;color:black;"
+      );
+
+      // warning!
+      console.log(
+        "%cWarning",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.warn("There is a warn console");
+
+      // Error :|
+      console.log(
+        "%cError",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.error("This is an error");
+
+      // Info
+      console.log(
+        "%cInfo",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.info("This is an info console");
+
+      // Testing
+      console.log(
+        "%cTesting",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.assert(1 === 2, "This is a false test");
+
+      // clearing
+      //   console.clear();
+
+      // Viewing DOM Elements
+      console.log(
+        "%cViewing DOM Elements",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.dir(p);
+
+      // Grouping together
+      console.log(
+        "%cGrouping together",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      dogs.forEach((dog) => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        console.groupEnd(`${dog.name}`);
+      });
+
+      // counting
+      console.log(
+        "%cCounting",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.log("Wes");
+      console.count("Wes");
+
+      // timing
+      console.log(
+        "%cTiming",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.time("fetching data");
+      fetch("https://api.github.com/users/madalinaeleonorag")
+        .then((data) => data.json())
+        .then((data) => {
+          console.timeEnd("fetching data");
+        });
+
+      console.log(
+        "%cTable",
+        "background-color: white;color:black;padding: 3px;"
+      );
+      console.table(dogs);
+    </script>
+  </body>
+</html>
