@@ -24,3 +24,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/08-update.png)
 * 09 - Dev Tools Domination<br>
 ![''](./screenshots/09.png)
+* 10 - Hold Shift and Check Checkboxes<br>
+![''](./screenshots/10.png)
