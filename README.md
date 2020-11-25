@@ -28,3 +28,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/10.png)
 * 11 - Custom Video Player<br>
 ![''](./screenshots/11.png)
+* 12 - Key Sequence Detection<br>
+![''](./screenshots/12.png)
