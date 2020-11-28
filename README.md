@@ -30,3 +30,7 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/11.png)
 * 12 - Key Sequence Detection<br>
 ![''](./screenshots/12.png)
+* 13 - Slide in on Scroll<br>
+![''](./screenshots/13.png)
+* 14 - JavaScript References VS Copying<br>
+![''](./screenshots/14.png)
