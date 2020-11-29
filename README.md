@@ -36,3 +36,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/14.png)
 * 15 - LocalStorage<br>
 ![''](./screenshots/15.png)
+* 16 - Mouse Move Shadow<br>
+![''](./screenshots/16.png)
