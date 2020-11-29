@@ -34,3 +34,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/13.png)
 * 14 - JavaScript References VS Copying<br>
 ![''](./screenshots/14.png)
+* 15 - LocalStorage<br>
+![''](./screenshots/15.png)
