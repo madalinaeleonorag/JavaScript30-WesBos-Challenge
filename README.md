@@ -38,3 +38,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/15.png)
 * 16 - Mouse Move Shadow<br>
 ![''](./screenshots/16.png)
+* 17 - Sort Without Articles<br>
+![''](./screenshots/17.png)
