@@ -52,3 +52,7 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/22.png)
 * 23 - Speech Synthesis<br>
 ![''](./screenshots/23.png)
+* 24 - Sticky Nav<br>
+![''](./screenshots/24.png)
+* 25 - Event Capture, Propagation, Bubbling and Once<br>
+![''](./screenshots/25.png)
