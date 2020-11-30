@@ -44,3 +44,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/18.png)
 * 19 - Webcam Fun<br>
 ![''](./screenshots/19.png)
+* 20 - Speech Detection<br>
+![''](./screenshots/20.png)
