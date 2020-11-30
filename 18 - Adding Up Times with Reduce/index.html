@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <ol class="videos">
+      <li data-time="5:43">Video 1 (5:43)</li>
+      <li data-time="2:33">Video 2 (2:33)</li>
+      <li data-time="3:45">Video 3 (3:45)</li>
+      <li data-time="23:47">Video 4 (23:47)</li>
+      <li data-time="5:21">Video 5 (5:21)</li>
+      <li data-time="46:56">Video 6 (46:56)</li>
+      <li data-time="3:46">Video 7 (3:46)</li>
+      <li data-time="15:25">Video 8 (15:25)</li>
+      <li data-time="23:14">Video 9 (23:14)</li>
+      <li data-time="3:31">Video 10 (3:31)</li>
+    </ol>
+    <script>
+      const timeNodes = Array.from(document.querySelectorAll("[data-time]"));
+      console.log("Time nodes", timeNodes);
+      const seconds = timeNodes
+        .map((node) => node.dataset.time)
+        .map((timeCode) => {
+          const [mins, secs] = timeCode.split(":").map(parseFloat);
+          return mins * 60 + secs;
+        })
+        .reduce((total, vidSeconds) => total + vidSeconds);
+
+      console.log("Total seconds: ", seconds);
+      let secondsLeft = seconds;
+      const hours = Math.floor(secondsLeft / 3600);
+      secondsLeft = secondsLeft % 3600;
+
+      const mins = Math.floor(secondsLeft / 60);
+      secondsLeft = secondsLeft % 60;
+      console.log("hours:mins:seconds => ", hours, ":", mins, ":", secondsLeft);
+    </script>
+    <style>
+      li {
+        padding: 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid lightsteelblue;
+      }
+      li::marker {
+        color: lightsteelblue;
+        font-weight: bold;
+      }
+    </style>
+  </body>
+</html>

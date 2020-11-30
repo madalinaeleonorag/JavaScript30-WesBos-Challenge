@@ -40,3 +40,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/16.png)
 * 17 - Sort Without Articles<br>
 ![''](./screenshots/17.png)
+* 18 - Adding Up Times with Reduce<br>
+![''](./screenshots/18.png)
