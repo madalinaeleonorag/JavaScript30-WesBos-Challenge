@@ -48,3 +48,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/20.png)
 * 21 - Geolocation<br>
 ![''](./screenshots/21.png)
+* 22 - Follow Along Link Highlighter<br>
+![''](./screenshots/22.png)
