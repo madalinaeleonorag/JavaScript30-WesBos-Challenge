@@ -50,3 +50,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/21.png)
 * 22 - Follow Along Link Highlighter<br>
 ![''](./screenshots/22.png)
+* 23 - Speech Synthesis<br>
+![''](./screenshots/23.png)
