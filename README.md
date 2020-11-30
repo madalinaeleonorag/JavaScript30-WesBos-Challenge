@@ -46,3 +46,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/19.png)
 * 20 - Speech Detection<br>
 ![''](./screenshots/20.png)
+* 21 - Geolocation<br>
+![''](./screenshots/21.png)
