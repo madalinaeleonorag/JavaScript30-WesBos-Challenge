@@ -56,3 +56,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/24.png)
 * 25 - Event Capture, Propagation, Bubbling and Once<br>
 ![''](./screenshots/25.png)
+* 26 - Stripe Follow Along Nav<br>
+![''](./screenshots/26.png)
