@@ -62,3 +62,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/27.png)
 * 28 - Video Speed Controller<br>
 ![''](./screenshots/28.png)
+* 29 - Countdown Timer<br>
+![''](./screenshots/29.png)
