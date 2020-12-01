@@ -64,3 +64,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/28.png)
 * 29 - Countdown Timer<br>
 ![''](./screenshots/29.png)
+* 30 - Whack A Mole<br>
+![''](./screenshots/30.png)
