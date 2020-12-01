@@ -60,3 +60,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/26.png)
 * 27 - Click and Drag<r>
 ![''](./screenshots/27.png)
+* 28 - Video Speed Controller<br>
+![''](./screenshots/28.png)
