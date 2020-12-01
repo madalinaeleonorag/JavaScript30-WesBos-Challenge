@@ -58,3 +58,5 @@ You can find the course there: [JavaScript30](https://javascript30.com)
 ![''](./screenshots/25.png)
 * 26 - Stripe Follow Along Nav<br>
 ![''](./screenshots/26.png)
+* 27 - Click and Drag<r>
+![''](./screenshots/27.png)
